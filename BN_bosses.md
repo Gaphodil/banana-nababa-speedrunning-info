@@ -260,7 +260,7 @@
         - path 4 (1/9): 1 -> lower platform height -> right across upper platform -> lower platform height -> 6
         - path 5 (1/9): 1 -> upper platform height -> diagonal down to ground -> diagonal up from ground -> upper platform height -> 6
         - path 6 (1/9): 6 -> straight left -> 1
-        - path 7 (1/9): 6 -> above upper platform height -> down along right side of platforms to lower platform -> up along left side of platforms -> 1
+        - path 7 (1/9): 6 -> above upper platform height -> down through right side of platforms to lower platform -> up through left side of platforms -> 1
         - path 8 (1/9): 6 -> 5 -> 4 -> 3 -> 2 -> 1
         - path 9 (1/9): 6 -> left at lower platform height -> 1
         - path 10 (1/10): 6 -> vaguely heart shaped -> diagonal down to lower platform -> diagonal up from lower plaform -> vaguely heart shaped -> 1
@@ -330,7 +330,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 24 explosions
     - after 5 frames, destroys `_1` and `_2`, creates `_3` and `_4`
 
-### Phase 2 (`_3` and `_4`)
+### Phase 3 (`_3` and `_4`)
 - hp = 60, `xplodes` = 22 (12 on `_4`, unused), `shots` = 4 (on both)
 - `_3` alarms identical to `_1`
 - `_4` alarms identical to `_2`
