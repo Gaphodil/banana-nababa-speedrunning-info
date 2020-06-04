@@ -1,12 +1,12 @@
 # Delving into the .gmk of Banana Nababa
 
-### What is Banana Nababa?
+## What is Banana Nababa?
 
 **Banana Nababa** is a freeware platformer "boss rush" developed by Lazrael in 2007. The gameplay is comprised of moving, jumping, and attacking, which is a good focus for the six unique boss fights.
 
 A download of the game can be found [here](https://archive.org/details/BananaNababa).
 
-### Sections
+## Sections
 
 [Basics and Major Mechanics](BN_basics.md) <-- start here!
 
@@ -16,11 +16,11 @@ A download of the game can be found [here](https://archive.org/details/BananaNab
 
 [Bosses](BN_bosses.md)
 
-### Other stuff
+## Other stuff
 
 [Visual examples](BN_examples.md)
 
-[WaybackMachine of original release thread](https://web.archive.org/web/20071222183620/http://www.gamingw.net/forums/index.php?topic=63350) CW: a comment uses assault terminology as hyperbole
+[WaybackMachine of original release thread](https://web.archive.org/web/20071222183620/http://www.gamingw.net/forums/index.php?topic=63350) (CW: a comment uses assault terminology as hyperbole to describe hand pain)
 
 ---
 

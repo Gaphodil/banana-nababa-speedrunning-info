@@ -1,4 +1,4 @@
-## Effex \[sic\] (`o_fx` prefix)
+# Effex \[sic\] (`o_fx` prefix)
 
 - `o_fx_dead` is a tiny animated orange sprite that
     - gets a randomized animation speed
@@ -12,7 +12,7 @@
     - is constructed when the player takes damage from attacks 
     - flashes the screen white with an alpha of `0.5` (meaning the sprite is a functional requirement)
     - after 2 frames, destroys itself
-- `o_fx_light` is the first frame of a "dragon" sprite ([Swarm Lord](BN_bosses.md#swarm-lord-dragon-prefix) that
+- `o_fx_light` is the first frame of a "dragon" sprite ([Swarm Lord](BN_bosses.md#swarm-lord_dragon-prefix)) that
     - is not `visible` if an instance already exists
     - flashes the screen white with an alpha of `0.3`
     - after 6 frames, destroys itself

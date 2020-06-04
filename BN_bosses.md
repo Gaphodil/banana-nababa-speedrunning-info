@@ -1,33 +1,33 @@
-## Bosses (`o_en` prefix) 
+# Bosses (`o_en` prefix) 
 
 ### Contents
 
-- [Voodoo Mask](#voodoo-mask-mask-prefix)
+- [Voodoo Mask](#voodoo-mask-_mask-prefix)
     - [Phase 1](#phase-1-no-suffix)
-    - [Phase 2](#phase-2-2)
-    - [Phase 3](#phase-3-3)
-- [Swarm Lord](#swarm-lord-dragon-prefix)
+    - [Phase 2](#phase-2-_2)
+    - [Phase 3](#phase-3-_3)
+- [Swarm Lord](#swarm-lord-_dragon-prefix)
+    - [Phase 1](#phase-1-no-suffix-1)
+    - [Phase 2](#phase-2-_2-1)
+- [Plague Beetle](#plague-beetle-_dark-prefix)
     - [Phase 1](#phase-1-no-suffix-2)
-    - [Phase 2](#phase-2-2-2)
-- [Plague Beetle](#plague-beetle-dark-prefix)
+    - [Phase 2](#phase-2-_2-2)
+    - [Phase 3](#phase-3-_3-1)
+- [Giga Slith](#giga-slith-_slith-prefix)
     - [Phase 1](#phase-1-no-suffix-3)
-    - [Phase 2](#phase-2-2-3)
-    - [Phase 3](#phase-3-3-2)
-- [Giga Slith](#giga-slith-slith-prefix)
-    - [Phase 1](#phase-1-no-suffix-4)
-    - [Phase 2](#phase-2-2-4)
-- [Gatekeeper](#gatekeeper-gate-prefix)
-    - [Phase 1](#phase-1-1)
-    - [Phase 2](#phase-2-2-5)
-    - [Phase 3](#phase-3-3-3-and-4)
-- [False Raiden](#false-raiden-abo-prefix)
+    - [Phase 2](#phase-2-_2-3)
+- [Gatekeeper](#gatekeeper-_gate-prefix)
+    - [Phase 1](#phase-1-_1)
+    - [Phase 2](#phase-2-_2-4)
+    - [Phase 3](#phase-3-_3-and-_4)
+- [False Raiden](#false-raiden-_abo-prefix)
 
 ---
 
-### Voodoo Mask (`_mask` prefix)
+## Voodoo Mask (`_mask` prefix)
 - has a 4x2 tiles (64x32 pixels) sprite regardless of phase and actual collision
 
-#### Phase 1 (no suffix)
+### Phase 1 (no suffix)
 - hp = 50, `xplodes` = 12
 - after 50 frames, starts the music
 - after 100 frames, does alarm 0
@@ -42,14 +42,14 @@
             - destroyed at animation end
                 - sprite has 22 images, image speed is 0.2
         - after 200 frames, return to alarm 0
-    - alarm 2 (1/4): "Create the hominh \[sic\] orb line" (6 \* [`o_hazard_orb_line`](BN_hazards.md#orbsd-sic-other-orb-prefix))
+    - alarm 2 (1/4): "Create the hominh \[sic\] orb line" (6 \* `o_hazard_orb_line`)
         - after 240 frames, return to alarm 0
 - on death: start exploding after 1 frame
     - continue exploding every 6 frames for `xplodes`/0.5 = 24 explosions 
     - create `o_powerup_hp` on the last 3 explosions (starts 20 frames before phase change)
     - after 2 frames, creates `_2`
     
-#### Phase 2 (`_2`)
+### Phase 2 (`_2`)
 - hp = 100, `xplodes` = 12
 - after 100 frames, does alarm 0
     - alarm 0 (1/4): create two [`o_hazard_orb_lazer`](#orb-prefix)
@@ -70,7 +70,7 @@
     - create `o_powerup_hp` on the last 3 explosions (starts 20 frames before phase change)
     - after 2 frames, creates `_3`
 
-#### Phase 3 (`_3`)
+### Phase 3 (`_3`)
 - hp = 40, `xplodes` = 16
 - deals 5 damage, persists on contact
 - after 100 frames, does "Jump attack"
@@ -86,10 +86,10 @@
 
 ---
 
-### Swarm Lord (`_dragon` prefix)
+## Swarm Lord (`_dragon` prefix)
 - has a 5x3 tiles (80x48 pixels) sprite
 
-#### Phase 1 (no suffix)
+### Phase 1 (no suffix)
 - hp = 60, `xplodes` = 18, `minions` = 8
 - after 70 frames, starts the music
 - after 100 frames, does alarm 0
@@ -118,7 +118,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 36 explosions
     - after 5 frames, creates `_2`
 
-#### Phase 2 (`_2`)
+### Phase 2 (`_2`)
 - hp = 70, `xplodes` = 18, `minions` = 6
 - deals 5 damage, persists on contact (but you'd be silly to touch it)
 - after 80 frames, stops moving, starts `pth_dragon`
@@ -152,10 +152,10 @@
 
 ---
 
-### Plague Beetle (`_dark` prefix)
+## Plague Beetle (`_dark` prefix)
 - has a 2x2 tiles (32x32 pixels) sprite
 
-#### Phase 1 (no suffix)
+### Phase 1 (no suffix)
 - hp = 60, `xplodes` = 18
 - deals 10 damage, persists on contact
 - after 30 frames, starts the music
@@ -189,7 +189,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 36 explosions
     - after 5 frames, creates `_2`
 
-#### Phase 2 (`_2`)
+### Phase 2 (`_2`)
 - hp = 60, `xplodes` = 18, `gravity_direction` = 90 (upward)
 - deals 10 damage, persists on contact
 - after 60 frames, does alarm 4 (nothing)
@@ -215,7 +215,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 36 explosions
     - after 5 frames, creates `_3`
     
-#### Phase 3 (`_3`)
+### Phase 3 (`_3`)
 - hp = 30, `xplodes` = 18
 - deals 10 damage, persists on contact
 - speed of 1, initial direction of `random(360)`
@@ -239,10 +239,10 @@
 
 ---
 
-### Giga Slith (`_slith` prefix)
+## Giga Slith (`_slith` prefix)
 - each segment has a 1x1 tile (16x16 pixels) sprite
 
-#### Phase 1 (no suffix)
+### Phase 1 (no suffix)
 - hp = 40, `xplodes` = 18
 - deals 5 damage, persists on contact
 - after 50 frames, starts the music
@@ -270,7 +270,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 36 explosions
     - after 5 frames, creates `_2`
 
-#### Phase 2 (`_2`)
+### Phase 2 (`_2`)
 - hp = 40, `xplodes` = 18
 - deals 5 damage, persists on contact
 - creates `_minion_left` and `_minion_right`
@@ -292,13 +292,13 @@
     - after 5 frames, creates orb centered two tiles above the upper platform
 ---
 
-### Gatekeeper (`_gate` prefix)
+## Gatekeeper (`_gate` prefix)
 - each side has a 1x5 tiles (16x80 pixels) sprite with a 21 pixel high hurtbox
 - both phases 1 and 2 are already present
 - can only be hit when `image_index < 4` (immune during 2 subimages of eye closing/closed)
     - `image_speed` = 0.1 (changes every 10 frames) -> 20 frames of invincibility every 60 frames
 
-#### Phase 1 (`_1`)
+### Phase 1 (`_1`)
 - hp = 40, `xplodes` = 12, `shots` = 4
 - after 80 frames, starts the music
 - after 100 frames, do alarm 0 (which repeats every 200 frames and does nothing else)
@@ -321,7 +321,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 24 explosions
     - after 5 frames, closes eye, activates `_2` after 100 frames
 
-#### Phase 2 (`_2`)
+### Phase 2 (`_2`)
 - hp = 40, `xplodes` = 12, `shots` = 4
 - after 100 frames, do alarm 1 (identical but replace both `_triplet_#` with `_bounce`)
     - this still makes 3 copies of `_bounce` despite them layering on top of each other and effectively being only one
@@ -330,7 +330,7 @@
     - continue exploding every 6 frames for `xplodes`/0.5 = 24 explosions
     - after 5 frames, destroys `_1` and `_2`, creates `_3` and `_4`
 
-#### Phase 2 (`_3` and `_4`)
+### Phase 2 (`_3` and `_4`)
 - hp = 60, `xplodes` = 22 (12 on `_4`, unused), `shots` = 4 (on both)
 - `_3` alarms identical to `_1`
 - `_4` alarms identical to `_2`
@@ -342,7 +342,7 @@
 
 ---
 
-### False Raiden (`_abo` prefix)
+## False Raiden (`_abo` prefix)
 - hp = 190, `xplodes` = 28
 - after 120 frames, starts the music
 - after 220 frames, does alarm 0

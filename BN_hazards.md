@@ -1,24 +1,25 @@
+# Hazards (`o_hazard` prefix)
+
 ### Contents
 
-- [Hazards](#hazards-o-hazard-prefix)
+- [Hazards](#hazards-o_hazard-prefix)
     - [Beams](#beams)
-        - [`_dragon` prefix](#dragon-prefix)
-        - [`_orb` prefix](#orb-prefix)
+        - [`_dragon` prefix](#_dragon-prefix)
+        - [`_orb` prefix](#_orb-prefix)
     - [Fire](#fire)
-        - [`_chainfire` prefix](#chainfire-prefix)
-        - [`_fire` prefix](#fire-prefix)
-    - [Orbsd \[sic\] (other `_orb` prefix)](#orbsd-sic-other-orb-prefix)
+        - [`_chainfire` prefix](#_chainfire-prefix)
+        - [`_fire` prefix](#_fire-prefix)
+    - [Orbsd \[sic\] (other `_orb` prefix)](#orbsd-sic-other-_orb-prefix)
     - [Other](#other)
 
 ---
 
-## Hazards (`o_hazard` prefix)
 - `o_hazard_hazard` (parent class) deals 1 damage, is destroyed on contact
 
-### Beams
+## Beams
 - all beams deal 10 damage and persist on contact with player
 
-#### `_dragon` prefix
+### `_dragon` prefix
 - `_beam`
     - after 20 frames, get `hspeed = 4` and create `_beam_trail` every 2 frames after
     - on hitting a wall, it creates `_beam_2` and destroys itself
@@ -28,7 +29,7 @@
 - `_beam_trail` deals 10 damage, persists on contact
     - after 20 frames, destroys itself
 
-#### `_orb` prefix
+### `_orb` prefix
 - `_lazer`
     - after 60 frames, move towards the player at a speed of 5, then create `_trail` every frame after
     - destroys itself on contact with any block or room exit
@@ -37,9 +38,9 @@
     - after 30 frames, destroys itself
 - `_trail_2` does the same (and flashes slightly differently)
 
-### Fire
+## Fire
 
-#### `_chainfire` prefix
+### `_chainfire` prefix
 - `_drop_left` and `_drop_right` deal 10 damage, persist on contact, and have `vspeed = 2`
     - hitting any block creates `_pillar_left` or `_pillar_right` respectively and destroys itself
 - `_pillar_left` and `_pillar_right` are 2 blocks tall
@@ -47,7 +48,7 @@
     - destroyed at animation end
         - sprite is 14 images, image speed is 0.8
 
-#### `_fire` prefix
+### `_fire` prefix
 - all deal 5 damage, persist on contact
 - `_drop` has `vspeed = 2`
     - hitting any block creates `_pillar` and destroys itself
@@ -55,7 +56,7 @@
     - destroyed at animation end
         - sprite is 9 images, image speed is 0.4
 
-### Orbsd \[sic\] (other `_orb` prefix)
+## Orbsd \[sic\] (other `_orb` prefix)
 - all deal 5 damage, destroyed on contact with player or outside room
 - the fabled `o_hazard_orb` moves towards the player at a speed of 1
 - `_2` has a direction of `instance_number` \* 90 + 45 (4 diagonals) and a speed of 2
@@ -64,7 +65,7 @@
 - `_line` spawns at an x of 8 + `instance_number` \* 32
     - after 60 + `instance_number` * 20 frames, move toward the player again at a speed of 2
     
-### Other
+## Other
 - `_block` deals 5 damage, persists on contact, starts with 0.1 gravity
     - stops moving on contact with floor or player
     - destroyed at animation end
