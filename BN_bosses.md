@@ -263,7 +263,7 @@
         - path 7 (1/9): 6 -> above upper platform height -> down through right side of platforms to lower platform -> up through left side of platforms -> 1
         - path 8 (1/9): 6 -> 5 -> 4 -> 3 -> 2 -> 1
         - path 9 (1/9): 6 -> left at lower platform height -> 1
-        - path 10 (1/10): 6 -> vaguely heart shaped -> diagonal down to lower platform -> diagonal up from lower plaform -> vaguely heart shaped -> 1
+        - path 10 (1/18): 6 -> vaguely heart shaped -> diagonal down to lower platform -> diagonal up from lower plaform -> vaguely heart shaped -> 1
 - after exiting the room (end of a path), do alarm 2 after 130 frames
 - on death: start exploding after 1 frame
     - stops alarms 0, 1, 2
