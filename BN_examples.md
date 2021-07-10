@@ -10,6 +10,6 @@
 
 ## Equal `x` with Voodoo Mask Phase 3
 
-[![](screenshots/voodoohop.png)](https://i.imgur.com/LN6OEFC.mp4 "Click to watch!")
+[![](screenshots/voodoohop.png)](https://i.imgur.com/AmIpj8a.mp4 "Click to watch!")
 
 (video)
